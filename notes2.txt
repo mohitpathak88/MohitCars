@@ -1,0 +1,2 @@
+1 in home.js) In grid system of bootstrap, we have 12 columns in a row, but in a grid system in antd we have 24 col.
+In home page we ll be habing 4 cars in a row, each would take '5' col leaving us with extra 4 col which would be used in margins. 
