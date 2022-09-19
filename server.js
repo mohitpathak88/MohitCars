@@ -3,7 +3,7 @@ const dbConnection = require('./db');
 const cors = require("cors");
 
 const app = express();
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 app.use(cors("*")) ;        //It allows us to relax the security applied to an API. Hence, we can use the api created from our backend to 
 //frontend without any problem
 app.use(express.json())
