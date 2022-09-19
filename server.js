@@ -3,6 +3,7 @@ const dbConnection = require('./db');
 const cors = require("cors");
 
 const app = express();
+const host = '0.0.0.0';
 const port = process.env.PORT || 5000;
 app.use(cors("*")) ;        //It allows us to relax the security applied to an API. Hence, we can use the api created from our backend to 
 //frontend without any problem
@@ -34,4 +35,4 @@ if(process.env.NODE_ENV==='production')
 }
 
 app.get('/', (req,res) => res.send('Hello Worldx'));
-app.listen(port, () => console.log(`Nodejs Server Started on ${port}`));
+app.listen(port, host, () => console.log(`Nodejs Server Started on ${port}`));
